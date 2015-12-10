@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+
+  <title>My React Learning Tool</title>
+</head>
+<body>
+
+
+</body>
+
+<script type="text/jsx">
+  // define class
+  var HelloWorld = React.createClass({
+    render: function(){
+      return <div>
+        Hello World
+      </div>
+
+    }
+  });
+
+
+  //ask react to render the class
+  var element = React.createElement(HelloWorld);
+
+
+
+  //after you render put it in the body tag
+  React.render(element, document.body);
+
+</script>
+</html>
