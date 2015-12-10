@@ -1,3 +1,6 @@
+var React = require('react');
+
+
 var Badge = React.createClass({
   render: function() {
     return <button className="btn btn-primary" type="button">
@@ -5,3 +8,5 @@ var Badge = React.createClass({
     </button>
   }
 });
+
+module.exports = Badge;
