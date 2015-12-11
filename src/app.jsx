@@ -1,27 +1,17 @@
 
 var React = require('react');
 var ReactDOM = require('react-dom');
-var ThumbnailList = require('./thumbnail-list');
-
+var Dropdown = require('./dropdown');
 
 
 var options = {
-  thumbnailData:  [{
-    key: 0,
-    title: 'Show Courses',
-    number: 12,
-    header: 'Learn React',
-    description: 'React is a fantastic new front end library for rendering web pages. React is a fantastic new front end library for rendering web pages.',
-    imageUrl: 'https://raw.githubusercontent.com/wiki/facebook/react/react-logo-1000-transparent.png'
-  },{
-    key: 1,
-    title: 'Show Courses',
-    number: 25,
-    header: 'Learn Gulp',
-    description: 'Gulp will speed up your development workflow.  Gulp will speed up your development workflow.  Gulp will speed up your development workflow.',
-    imageUrl: 'http://brunch.io/images/others/gulp.png'
-  }]
+  title: 'Choose a Dessert',
+  items: [
+    'Apple Pie',
+    'Peach Cobbler',
+    'Pie'
+  ]
 };
 
-var element = React.createElement(ThumbnailList, options);
+var element = React.createElement(Dropdown, options);
 ReactDOM.render(element, document.querySelector('.container'));
